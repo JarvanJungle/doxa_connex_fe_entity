@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin-entity-management-portal-deployment
+  name: admin-entity-management-portal-deployment
+spec:
+  replicas: {replicas}
+  selector:
+    matchLabels:
+      app: admin-entity-management-portal-deployment
+  template:
+    metadata:
+      labels:
+        app: admin-entity-management-portal-deployment
+    spec:
+      containers:
+        - image: {container_image}
+          name: admin-entity-management-portal
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+          env:      
+            - name: NODE_ENV
+              value: development

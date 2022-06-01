@@ -1,0 +1,7 @@
+@import '~@owczar/dashboard-style--airframe/scss/bootstrap/bootstrap';
+
+.FITabContainer > .nav-tabs > .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #FFF!important;
+    background-color: #f8a186!important;
+    border-color: #DEE2E6 #DEE2E6 #FFF;
+  }

@@ -1,0 +1,11 @@
+.chart-function-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0 5px 0 5px;
+
+    &:hover {
+        background-color: rgb(206, 206, 206);
+        border-radius: 5px;
+    }
+}
